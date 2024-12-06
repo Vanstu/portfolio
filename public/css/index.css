@@ -47,17 +47,22 @@ img.grumpy {
 
 .menu-principal a {
   text-decoration: none;
+  color: azure;
+  font-weight: bold;
+  font-size: 24px;
   text-align: center;
   display: block;
   padding: 20px 0px;
-  width: 60px;
-  background-color: aqua;
-  border-color: crimson;
-  border-style: solid;
+  width: 200px;
+  background-color: rgb(0, 59, 59);
   border-radius: 10px;
-  
 }
 
 .menu-principal ul {
     padding: 0%;
+}
+
+.menu-principal a:hover, .menu-principal a:focus {
+    background-color: rgb(255, 0, 119);
+    color: rgb(0, 59, 59);
 }
