@@ -1,29 +1,61 @@
 :root {
-    --page-background-color: #3498db;
-    --main-background-color: red;
-    --header-background-color: pink;
+    --page-background-color: #FFF;
+    --main-background-color: #FFF;
+    --header-background-color: #FFF;
+    --text-color: #000;
+    --accent-color: #4169E1;
+    --focus-color: orange;
+}
+
+.accent {
+    color: var(--accent-color)
 }
 
 /* Container */
 body {
     background: var(--page-background-color);
     margin: 0;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    color: var(--text-color);
 }
 
 main {
     background: var(--main-background-color);
-    margin: 0px 200px;
+    margin: 0px 100px;
 }
 
 /* Header */
 header {
     display: flex;
     background: var(--header-background-color);
-    height: 70px;
+    height: 100px;
 }
 
 header .header-logo-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+header .header-logo-image {
+    width: 40px;
+    height: 40px;
+}
+
+header .header-logo-text {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--accent-color);
+  line-height: 28px;
 }
 
 header nav {
@@ -34,38 +66,65 @@ header nav {
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin: 0;
 }
 
 header nav ul li a {
-    display: block;
-    background: violet;
     padding: 30px;
-    text-decoration: none  ; 
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
 }
 
-header nav ul li a:hover {
-    background: fuchsia;
+header nav ul li a:hover, header nav ul li a:focus  {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--accent-color);
+}
+
+header nav ul li a:focus  {
+    text-decoration-color: var(--focus-color);
 }
 
 /* About me */
 #about-me {
     margin-top: 50px;
     display: flex;
+    gap: 50px;
 }
 
 #about-me .about-me-image {
-    flex: 4
+    flex: 1;
 }
 
 #about-me .about-me-image img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    border-radius: 100%;
+    border-radius: 20px;
+    aspect-ratio: 1;
 }
 
 #about-me .about-me-text {
-    flex: 6
+    flex: 2
+}
+
+#about-me .about-me-text h1 {
+    margin: 0;
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 110%;
+}
+
+#about-me .about-me-text p {
+    margin-top: 20px;
+    font-size: 28px;
+    line-height: 140%;
+    /* font-family: "Arial"; */
 }
