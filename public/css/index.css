@@ -111,6 +111,7 @@ header nav ul li a:focus  {
     object-fit: cover;
     border-radius: 20px;
     aspect-ratio: 0.8;
+    border: 5px solid var(--accent-color)
 }
 
 #about-me .about-me-text {
