@@ -1,16 +1,58 @@
 ---
-
+import PortfolioLayout from "../layouts/PortfolioLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<PortfolioLayout>
+  <!-- About me -->
+  <section id="about-me">
+    <div class="about-me-image">
+      <img
+        alt=""
+        src="https://i.pinimg.com/736x/d3/c4/66/d3c466e3c4845ebff7bbabf4eecaa1b6.jpg"
+      />
+    </div>
+    <div class="about-me-text">
+      <h1>
+        Vanessa Strub,<br /><span class="accent">UX designer</span>
+        spécialisée en <span class="accent">accessibilité numérique</span>
+      </h1>
+      <p>
+        Je conçois des solutions numériques accessibles et intuitives, adaptées
+        aux besoins de tous.
+      </p>
+    </div>
+  </section>
+
+  <!-- work together -->
+  <section id="work-together">
+    <h2>Travaillons ensemble</h2>
+    <h3>UX design</h3>
+    <p>
+      Je conçois des solutions en impliquant les utilisateurs finaux tout au
+      long du processus de conception. J’ai un intérêt prononcé pour la
+      résolution de problèmes complexes. Je m'appuie sur des audits UX
+      approfondis et la recherche utilisateurs pour identifier leurs points de
+      friction, leurs motivations et leurs attentes, et proposer des solutions
+      vraiment adaptées. J'interviens dans toutes les phases d'un projet :
+      depuis la recherche initiale, en passant par les ateliers de co-conception
+      et d'idéation, jusqu'à l’élaboration des wireframes et des prototypes.
+    </p>
+    <p><a href="/ux-design">Mon approche de l'UX design</a></p>
+
+    <h3>Accessibilité numérique</h3>
+    <p>
+      Je suis spécialisée en accessibilité numérique, en particulier dans la
+      réalisation d’audits de conformité RGAA. J’évalue les sites web et les
+      applications pour identifier les problèmes d'accessibilité et rédige des
+      rapports d'audit détaillant les obstacles rencontrés, ainsi que des
+      solutions concrètes pour les résoudre. Je propose également un
+      accompagnement pour aider les entreprises à mettre leur site en conformité
+      avec les normes d'accessibilité. Mon expertise me permet d’intervenir à
+      différentes étapes d’un projet, en conseillant sur les bonnes pratiques
+      d’accessibilité, et en veillant à ce que les solutions proposées soient
+      accessibles à tous les utilisateurs, y compris les personnes en situation
+      de handicap.
+    </p>
+    <p><a href="/accessibilite">Mon expertise en accessibilité</a></p>
+  </section>
+</PortfolioLayout>
