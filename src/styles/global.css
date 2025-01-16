@@ -5,7 +5,7 @@
     --text-color: #000;
     --accent-color: #2546f0;
     --focus-color: violet;
-    --page-gutter: 100px;
+    --page-width: 1440px;
 }
 
 .accent {
@@ -19,19 +19,22 @@ body {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     color: var(--text-color);
+    padding: 0px 32px;
 }
 
 main {
+    margin: auto;
     background: var(--main-background-color);
-    margin: 0px var(--page-gutter);
+    max-width: var(--page-width);
 }
 
 /* Header */
 header {
+    margin: auto;
     display: flex;
     background: var(--header-background-color);
     height: 100px;
-    margin: 0px var(--page-gutter);
+    max-width: var(--page-width);
 }
 
 header .header-logo-container {
