@@ -1,0 +1,80 @@
+<header>
+  <a class="header-logo-container" href="/">
+    <span class="header-logo-text">Vanessa<br />Strub</span>
+  </a>
+  <nav>
+    <ul>
+      <li><a href="/">À propos de moi</a></li>
+      <li><a href="/ux-design">UX design</a></li>
+      <li><a href="/accessibilite">Accessibilité</a></li>
+      <li><a href="/projets">Projets</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  /* Header */
+  header {
+    margin: auto;
+    display: flex;
+    background: var(--header-background-color);
+    height: 100px;
+    max-width: var(--page-width);
+  }
+
+  .header-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .header-logo-text {
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 4px;
+    text-decoration-color: var(--accent-color);
+    line-height: 28px;
+  }
+
+  nav {
+    flex: 1;
+    padding: 0px 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+  }
+
+  a {
+    padding: 30px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--accent-color);
+  }
+
+  a:focus {
+    text-decoration-color: var(--focus-color);
+  }
+</style>
