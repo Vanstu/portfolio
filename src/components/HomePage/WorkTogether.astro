@@ -1,0 +1,95 @@
+---
+import CatIcon from "../Icon/CatIcon.astro";
+import ComputerIcon from "../Icon/ComputerIcon.astro";
+---
+
+<section id="work-together">
+  <h2>Travaillons ensemble !</h2>
+  <div id="skills">
+    <div class="skill">
+      <h3>UX design</h3>
+      <p>
+        Je conçois des solutions en impliquant les utilisateurs finaux tout au
+        long du processus de conception. J’ai un intérêt prononcé pour la
+        résolution de problèmes complexes.
+      </p><p>
+        Je m'appuie sur des audits UX approfondis et la recherche utilisateurs
+        pour identifier leurs points de friction, leurs motivations et leurs
+        attentes, et proposer des solutions vraiment adaptées.
+      </p>
+      <p>
+        J'interviens dans toutes les phases d'un projet : depuis la recherche
+        initiale, en passant par les ateliers de co-conception et d'idéation,
+        jusqu'à l’élaboration des wireframes et des prototypes.
+      </p>
+      <a href="/ux-design">Mon approche de l'UX design</a>
+    </div>
+    <div class="icon">
+      <ComputerIcon />
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <div id="skills">
+    <div class="icon">
+      <CatIcon />
+    </div>
+    <div class="skill">
+      <h3>Accessibilité numérique</h3>
+      <p>
+        Je suis spécialisée en accessibilité numérique, en particulier dans la
+        réalisation d’audits de conformité RGAA.
+      </p><p>
+        J’évalue les sites web et les applications pour identifier les problèmes
+        d'accessibilité et rédige des rapports d'audit détaillant les obstacles
+        rencontrés, ainsi que des solutions concrètes pour les résoudre.
+      </p><p>
+        Je propose également un accompagnement pour aider les entreprises à
+        mettre leur site en conformité avec les normes d'accessibilité. Mon
+        expertise me permet d’intervenir à différentes étapes d’un projet, en
+        conseillant sur les bonnes pratiques d’accessibilité, et en veillant à
+        ce que les solutions proposées soient accessibles à tous les
+        utilisateurs, y compris les personnes en situation de handicap.
+      </p>
+      <a href="/accessibilite">Mon expertise en accessibilité</a>
+    </div>
+  </div>
+</section>
+<style>
+  #work-together {
+    margin-top: 50px;
+  }
+
+  #skills {
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+  }
+
+  .skill {
+    flex: 3;
+  }
+
+  .icon {
+    flex: 2;
+  }
+
+  .icon svg {
+    width: 100%;
+    height: auto;
+  }
+
+  p {
+    font-size: 1.8em;
+  }
+
+  a::before {
+    content: "→ ";
+  }
+
+  a {
+    font-size: 1.8em;
+    color: var(--accent-color);
+  }
+</style>

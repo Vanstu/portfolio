@@ -1,152 +1,78 @@
 :root {
-    --page-background-color: transparent;
-    --main-background-color: transparent;
-    --header-background-color: transparent;
-    --text-color: #000;
-    --accent-color: #2546f0;
-    --focus-color: violet;
-    --page-gutter: 100px;
+  --page-background-color: transparent;
+  --main-background-color: transparent;
+  --header-background-color: transparent;
+  --text-color: #000;
+  --accent-color: #2546f0;
+  --focus-color: #f025ab;
+  --page-width: 1440px;
 }
 
-.accent {
-    color: var(--accent-color)
-}
+/* Breakpoints 320px, 480px, 768px, 1024px, and 1200px. */
 
 /* Container */
 body {
-    background: var(--page-background-color);
-    margin: 0;
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    color: var(--text-color);
+  background: var(--page-background-color);
+  margin: 0;
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  color: var(--text-color);
+  padding: 0px 32px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 900;
+  line-height: 110%;
+}
+
+h2 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 110%;
+}
+
+h3 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 900;
+  line-height: 110%;
+  color: var(--accent-color);
 }
 
 main {
-    background: var(--main-background-color);
-    margin: 0px var(--page-gutter);
+  margin: auto;
+  background: var(--main-background-color);
+  max-width: var(--page-width);
 }
 
-/* Header */
-header {
-    display: flex;
-    background: var(--header-background-color);
-    height: 100px;
-    margin: 0px var(--page-gutter);
+mark,
+.accent {
+  color: var(--accent-color);
+  background: transparent;
 }
 
-header .header-logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 18px;
-    text-decoration: none;
-    color: var(--text-color)
-}
+.page-background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  opacity: 0.8;
+  background-image: radial-gradient(var(--accent-color) 0.7px, #fff 0.7px);
+  background-size: 15px 15px;
 
-header .header-logo-image {
-    width: 40px;
-    height: 40px;
-}
-
-header .header-logo-text {
-  text-decoration: underline;
-  text-decoration-thickness: 4px;
-  text-underline-offset: 4px;
-  text-decoration-color: var(--accent-color);
-  line-height: 28px;
-}
-
-header nav {
-    flex: 1;
-    padding: 0px 20px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 5px;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-    margin: 0;
-}
-
-header nav ul li a {
-    padding: 30px;
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 18px;
-    font-weight: 600;
-}
-
-header nav ul li a:hover, header nav ul li a:focus  {
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 6px;
-    text-decoration-color: var(--accent-color);
-}
-
-header nav ul li a:focus  {
-    text-decoration-color: var(--focus-color);
-}
-
-/* About me */
-#about-me {
-    margin-top: 50px;
-    display: flex;
-    gap: 50px;
-}
-
-#about-me .about-me-image {
-    flex: 1;
-}
-
-#about-me .about-me-image img {
-    /* max-width: 100%;
-    max-height: 100%; */
-    width: 400px;
-    object-fit: cover;
-    border-radius: 20px;
-    aspect-ratio: 0.8;
-    border: 5px solid var(--accent-color)
-}
-
-#about-me .about-me-text {
-    flex: 2
-}
-
-#about-me .about-me-text h1 {
-    margin: 0;
-    font-size: 55px;
-    font-weight: 900;
-    line-height: 110%;
-}
-
-#about-me .about-me-text p {
-    margin-top: 20px;
-    font-size: 28px;
-    line-height: 140%;
-    /* font-family: "Arial"; */
-}
-
-.page-background
-{
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 500px;
-    opacity: 0.8;
-    background-image: radial-gradient(var(--accent-color) 0.7px, #fff 0.7px);
-    background-size: 15px 15px;
-
-    /* Add a fade-out effect at the bottom */
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    mask-size: 100% 100%;
-    mask-repeat: no-repeat;
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Safari support */
+  /* Add a fade-out effect at the bottom */
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  ); /* Safari support */
 }
