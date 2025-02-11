@@ -4,7 +4,7 @@
   --header-background-color: transparent;
   --text-color: #000;
   --accent-color: #2546f0;
-  --focus-color: #f025ab;
+  --secondary-color: #ff96dc;
   --page-width: 1440px;
 }
 
@@ -16,9 +16,8 @@ body {
   margin: 0;
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--text-color);
-  padding: 0px 32px;
 }
 
 h1 {
@@ -33,6 +32,11 @@ h2 {
   font-size: 3em;
   font-weight: 900;
   line-height: 110%;
+  /* color: var(--accent-color); */
+  /* text-decoration: underline;
+  text-decoration-thickness: 7px;
+  text-underline-offset: 7px;
+  text-decoration-color: var(--accent-color); */
 }
 
 h3 {
@@ -47,6 +51,7 @@ main {
   margin: auto;
   background: var(--main-background-color);
   max-width: var(--page-width);
+  padding: 0 32px;
 }
 
 mark,
