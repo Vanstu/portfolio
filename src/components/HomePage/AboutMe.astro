@@ -19,7 +19,9 @@ import vanessaPortraitImage from "../../assets/images/vanessa-portrait-34.jpg";
   </div>
 </section>
 
-<style>
+<style lang="scss">
+  @import "../../styles/breakpoints.scss";
+
   #about-me {
     margin-top: 40px;
     display: flex;
@@ -38,12 +40,6 @@ import vanessaPortraitImage from "../../assets/images/vanessa-portrait-34.jpg";
     object-fit: cover;
     border-radius: 50px 0px 50px 0px;
     aspect-ratio: 3 / 4;
-    /* border: 5px solid var(--accent-color);
-    border-width: 0px 10px 10px 0px;
-    border-color: var(--accent-color); */
-    /* border-width: 10px 10px 10px 10px;
-    border-color: var(--secondary-color) var(--accent-color) var(--accent-color)
-      var(--secondary-color); */
   }
 
   .about-me-text {
@@ -55,5 +51,36 @@ import vanessaPortraitImage from "../../assets/images/vanessa-portrait-34.jpg";
     font-size: 2.5em;
     line-height: 140%;
     /* font-family: "Arial"; */
+  }
+
+  @media (max-width: $breakpoint-small-desktop - 1px) {
+    #about-me {
+      font-size: 12px;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      text-align: center;
+    }
+
+    .about-me-image {
+      flex: none;
+    }
+    .about-me-image img {
+      height: 180px;
+      width: 180px;
+      object-position: 50% 20%;
+    }
+  }
+
+  @media (max-width: $breakpoint-tablet - 1px) {
+    #about-me {
+      font-size: 11px;
+    }
+  }
+
+  @media (max-width: $breakpoint-mobile - 1px) {
+    #about-me {
+      font-size: 10px;
+    }
   }
 </style>
